@@ -43,24 +43,24 @@ window.addEventListener("scroll", () => {
   const scrolled = window.scrollY;
 
   const orbs = document.querySelectorAll(".bg-orb");
-  const heroCard = document.querySelector(".hero-card");
-  const sigil = document.querySelector(".hero-sigil");
-  const offerSigil = document.querySelector(".offer-sigil");
+  const heroCircle1 = document.querySelector(".hero-circle-1");
+  const heroCircle2 = document.querySelector(".hero-circle-2");
+  const offerRing = document.querySelector(".offer-ring");
 
   orbs.forEach((orb, index) => {
     const speed = (index + 1) * 0.07;
     orb.style.transform = `translateY(${scrolled * speed}px)`;
   });
 
-  if (heroCard) {
-    heroCard.style.transform = `translateY(${scrolled * 0.035}px)`;
+  if (heroCircle1) {
+    heroCircle1.style.transform = `translate(-50%, -50%) rotate(${scrolled * 0.015}deg)`;
   }
 
-  if (sigil) {
-    sigil.style.transform = `translate(-50%, -50%) rotate(${scrolled * 0.02}deg)`;
+  if (heroCircle2) {
+    heroCircle2.style.transform = `translate(-50%, -50%) rotate(${scrolled * -0.02}deg)`;
   }
 
-  if (offerSigil) {
-    offerSigil.style.transform = `translateY(-50%) rotate(${scrolled * -0.03}deg)`;
+  if (offerRing) {
+    offerRing.style.transform = `translateY(-50%) rotate(${scrolled * -0.03}deg)`;
   }
 });
