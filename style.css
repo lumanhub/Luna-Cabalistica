@@ -213,12 +213,12 @@ ul {
 
 .btn-primary {
   color: #fff5f4;
-  background: linear-gradient(135deg, #ff5a4f 0%, #e1263b 52%, #8f0c1d 100%);
-  box-shadow: 0 12px 30px rgba(226, 31, 54, 0.34);
+  background: linear-gradient(135deg, #ff3c4d 0%, #d3112b 48%, #7f0618 100%);
+  box-shadow: 0 12px 30px rgba(211, 17, 43, 0.34);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 18px 42px rgba(226, 31, 54, 0.42);
+  box-shadow: 0 18px 42px rgba(211, 17, 43, 0.42);
 }
 
 .btn-outline {
@@ -303,14 +303,14 @@ ul {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ffe3dc 0%, #ff6b5f 24%, #ff3b47 52%, #d61f36 76%, #f2d6a4 100%);
+  background: linear-gradient(135deg, #ffe3dc 0%, #ff6b78 24%, #ff3246 52%, #cc1730 76%, #f2d6a4 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-red {
-  background: linear-gradient(135deg, #ff9d92 0%, #ff5a4f 20%, #ff3040 55%, #b50f27 100%);
+  background: linear-gradient(135deg, #ff9ca5 0%, #ff4f62 22%, #e01d37 58%, #8f0a1c 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -421,7 +421,6 @@ ul {
   min-height: 500px;
 }
 
-/* ÁRVORE DA VIDA */
 .tree-life {
   position: relative;
   width: 280px;
@@ -449,7 +448,7 @@ ul {
   background: linear-gradient(
     90deg,
     rgba(255,255,255,0.08),
-    rgba(255, 90, 79, 0.7),
+    rgba(255, 70, 90, 0.7),
     rgba(255,255,255,0.08)
   );
   transform-origin: left center;
@@ -467,96 +466,25 @@ ul {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 199, 160, 0.95),
+    rgba(255, 210, 210, 0.95),
     transparent
   );
   opacity: 0.9;
   animation: lineShine 3.8s linear infinite;
 }
 
-.line-1 {
-  width: 78px;
-  left: 102px;
-  top: 34px;
-  transform: rotate(28deg);
-}
-
-.line-2 {
-  width: 78px;
-  left: 102px;
-  top: 34px;
-  transform: rotate(152deg);
-}
-
-.line-3 {
-  width: 98px;
-  left: 42px;
-  top: 116px;
-  transform: rotate(0deg);
-}
-
-.line-4 {
-  width: 100px;
-  left: 74px;
-  top: 40px;
-  transform: rotate(90deg);
-}
-
-.line-5 {
-  width: 84px;
-  left: 76px;
-  top: 124px;
-  transform: rotate(42deg);
-}
-
-.line-6 {
-  width: 84px;
-  left: 120px;
-  top: 124px;
-  transform: rotate(138deg);
-}
-
-.line-7 {
-  width: 70px;
-  left: 105px;
-  top: 172px;
-  transform: rotate(90deg);
-}
-
-.line-8 {
-  width: 112px;
-  left: 84px;
-  top: 210px;
-  transform: rotate(0deg);
-}
-
-.line-9 {
-  width: 82px;
-  left: 76px;
-  top: 218px;
-  transform: rotate(42deg);
-}
-
-.line-10 {
-  width: 82px;
-  left: 122px;
-  top: 218px;
-  transform: rotate(138deg);
-}
-
-.line-11 {
-  width: 102px;
-  left: 72px;
-  top: 286px;
-  transform: rotate(90deg);
-}
-
-.line-12 {
-  width: 110px;
-  left: 85px;
-  top: 344px;
-  transform: rotate(0deg);
-}
+.line-1 { width: 78px; left: 102px; top: 34px; transform: rotate(28deg); }
+.line-2 { width: 78px; left: 102px; top: 34px; transform: rotate(152deg); }
+.line-3 { width: 98px; left: 42px; top: 116px; transform: rotate(0deg); }
+.line-4 { width: 100px; left: 74px; top: 40px; transform: rotate(90deg); }
+.line-5 { width: 84px; left: 76px; top: 124px; transform: rotate(42deg); }
+.line-6 { width: 84px; left: 120px; top: 124px; transform: rotate(138deg); }
+.line-7 { width: 70px; left: 105px; top: 172px; transform: rotate(90deg); }
+.line-8 { width: 112px; left: 84px; top: 210px; transform: rotate(0deg); }
+.line-9 { width: 82px; left: 76px; top: 218px; transform: rotate(42deg); }
+.line-10 { width: 82px; left: 122px; top: 218px; transform: rotate(138deg); }
+.line-11 { width: 102px; left: 72px; top: 286px; transform: rotate(90deg); }
+.line-12 { width: 110px; left: 85px; top: 344px; transform: rotate(0deg); }
 
 .sephira {
   position: absolute;
@@ -564,7 +492,7 @@ ul {
   height: 26px;
   border-radius: 50%;
   background:
-    radial-gradient(circle at 35% 35%, #fff4f1 0%, #ffb4aa 24%, #ff5a4f 60%, #971123 100%);
+    radial-gradient(circle at 35% 35%, #fff4f1 0%, #ffb5bf 24%, #ff4860 60%, #971123 100%);
   border: 1px solid rgba(255, 240, 235, 0.45);
   box-shadow:
     0 0 0 7px rgba(255,255,255,0.02),
@@ -573,13 +501,8 @@ ul {
   animation: sephiraPulse 3.2s ease-in-out infinite;
 }
 
-.sephira:nth-of-type(odd) {
-  animation-duration: 4s;
-}
-
-.sephira:nth-of-type(even) {
-  animation-duration: 2.8s;
-}
+.sephira:nth-of-type(odd) { animation-duration: 4s; }
+.sephira:nth-of-type(even) { animation-duration: 2.8s; }
 
 .s1 { top: 8px; left: 127px; }
 .s2 { top: 74px; left: 65px; }
@@ -637,11 +560,9 @@ ul {
 
 .glass-panel,
 .info-card,
-.testimonial-card,
 .state-card,
 .guarantee-box,
-.final-cta-box,
-.bonus-box {
+.final-cta-box {
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
   backdrop-filter: blur(18px);
@@ -654,8 +575,7 @@ ul {
 }
 
 .glass-panel h3,
-.final-cta-box h2,
-.bonus-box h2 {
+.final-cta-box h2 {
   margin-top: 14px;
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(2rem, 3vw, 3rem);
@@ -887,8 +807,7 @@ ul {
   position: relative;
   padding: 48px;
   border-radius: 34px;
-  background:
-    linear-gradient(180deg, #090102, #140305);
+  background: linear-gradient(180deg, #090102, #140305);
   border: 1px solid rgba(226, 31, 54, 0.34);
   box-shadow:
     0 0 140px rgba(226, 31, 54, 0.18),
@@ -899,9 +818,9 @@ ul {
 
 .offer-section.offer-highlighted .offer-portal {
   box-shadow:
-    0 0 0 1px rgba(255, 120, 50, 0.22),
-    0 0 40px rgba(255, 95, 31, 0.15),
-    0 0 90px rgba(255, 95, 31, 0.12),
+    0 0 0 1px rgba(255, 70, 90, 0.22),
+    0 0 40px rgba(220, 30, 60, 0.15),
+    0 0 90px rgba(220, 30, 60, 0.12),
     0 30px 80px rgba(0,0,0,0.72);
   transform: translateY(-2px);
 }
@@ -989,21 +908,40 @@ ul {
   font-weight: 700;
 }
 
-.price-main {
+.price-old {
   margin-top: 14px;
+  color: #d6b0b4;
+  font-size: 1.05rem;
+  text-decoration: line-through;
+  opacity: 0.9;
+}
+
+.price-main {
+  margin-top: 10px;
   font-size: clamp(2.4rem, 4vw, 3.8rem);
   font-weight: 800;
   line-height: 1.05;
 }
 
 .price-main span {
-  color: #ff7c87;
+  color: #ff6678;
+}
+
+.price-main small {
+  font-size: 1.2rem;
+  vertical-align: super;
+  color: #ffd6db;
+  margin-left: 3px;
 }
 
 .price-alt {
-  margin-top: 10px;
+  margin-top: 12px;
   color: var(--text-soft);
   font-size: 1.08rem;
+}
+
+.price-alt strong {
+  color: #fff0f2;
 }
 
 .btn-mystic {
@@ -1018,20 +956,23 @@ ul {
   font-weight: 800;
   letter-spacing: 0.06em;
   color: #fff6f5;
-  background: linear-gradient(135deg, #ff5d52 0%, #e1263b 52%, #8f0c1d 100%);
-  box-shadow: 0 0 34px rgba(226, 31, 54, 0.44);
+  background: linear-gradient(135deg, #ff3c4d 0%, #d3112b 48%, #7f0618 100%);
+  box-shadow: 0 0 34px rgba(211, 17, 43, 0.44);
   transition: all 0.4s ease;
 }
 
 .btn-mystic:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 60px rgba(226, 31, 54, 0.60);
+  box-shadow: 0 0 60px rgba(211, 17, 43, 0.60);
 }
 
-.price-micro {
+.price-secure {
   margin-top: 15px;
-  font-size: 0.86rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  color: #ffd9dd;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .value-compare {
@@ -1183,18 +1124,17 @@ ul {
   margin-top: 32px;
 }
 
-/* BOTÕES ANIMADOS */
 .btn-animated,
 .btn-mystic.btn-animated {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(120deg, #ff4d2d, #ff7a18, #ff4d2d, #ff9340);
+  background: linear-gradient(120deg, #ff4257, #d5122b, #8f091d, #d5122b);
   background-size: 300% 300%;
   border: none;
   color: #fff;
   box-shadow:
-    0 10px 30px rgba(255, 96, 40, 0.25),
-    inset 0 1px 0 rgba(255,255,255,0.18);
+    0 10px 30px rgba(211, 17, 43, 0.28),
+    inset 0 1px 0 rgba(255,255,255,0.16);
   animation: gradientFlow 6s ease infinite;
 }
 
@@ -1202,8 +1142,8 @@ ul {
 .btn-mystic.btn-animated:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow:
-    0 16px 40px rgba(255, 96, 40, 0.35),
-    0 0 25px rgba(255, 120, 40, 0.22);
+    0 16px 40px rgba(211, 17, 43, 0.38),
+    0 0 25px rgba(255, 70, 100, 0.18);
   filter: brightness(1.05);
 }
 
@@ -1216,7 +1156,7 @@ ul {
     110deg,
     transparent 20%,
     rgba(255,255,255,0.08) 40%,
-    rgba(255,255,255,0.22) 50%,
+    rgba(255,255,255,0.20) 50%,
     rgba(255,255,255,0.08) 60%,
     transparent 80%
   );
@@ -1231,9 +1171,9 @@ ul {
 
 .btn-offer-link:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 123, 41, 0.7);
+  border-color: rgba(226, 31, 54, 0.7);
   color: #fff;
-  box-shadow: 0 10px 25px rgba(255, 102, 51, 0.15);
+  box-shadow: 0 10px 25px rgba(211, 17, 43, 0.18);
 }
 
 .floating {
