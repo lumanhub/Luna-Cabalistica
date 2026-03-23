@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerLinks = document.querySelectorAll('a[href="#oferta"]');
   const offerSection = document.querySelector("#oferta");
 
-  // Reveal on scroll
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // FAQ accordion
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
@@ -46,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Smooth scroll + highlight offer
   offerLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -66,15 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Smooth internal nav for all anchors
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
       const target = document.querySelector(targetId);
 
       if (!target) return;
-
-      // Já tratado acima para oferta
       if (targetId === "#oferta") return;
 
       e.preventDefault();
