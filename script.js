@@ -1,66 +1,87 @@
-const revealElements = document.querySelectorAll(".reveal");
+document.addEventListener("DOMContentLoaded", () => {
+  const revealElements = document.querySelectorAll(".reveal");
+  const faqItems = document.querySelectorAll(".faq-item");
+  const offerLinks = document.querySelectorAll('a[href="#oferta"]');
+  const offerSection = document.querySelector("#oferta");
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.12,
-  }
-);
+  // Reveal on scroll
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+    }
+  );
 
-revealElements.forEach((element) => {
-  revealObserver.observe(element);
-});
-
-const faqItems = document.querySelectorAll(".faq-item");
-
-faqItems.forEach((item) => {
-  const question = item.querySelector(".faq-question");
-  const answer = item.querySelector(".faq-answer");
-
-  question.addEventListener("click", () => {
-    const isActive = item.classList.contains("active");
-
-    faqItems.forEach((faq) => {
-      faq.classList.remove("active");
-      faq.querySelector(".faq-answer").style.maxHeight = null;
-    });
-
-    if (!isActive) {
-      item.classList.add("active");
-      answer.style.maxHeight = answer.scrollHeight + "px";
+  revealElements.forEach((element) => {
+    if (!element.classList.contains("visible")) {
+      revealObserver.observe(element);
     }
   });
-});
 
-window.addEventListener("scroll", () => {
-  const scrolled = window.scrollY;
+  // FAQ accordion
+  faqItems.forEach((item) => {
+    const button = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
 
-  const orbs = document.querySelectorAll(".bg-orb");
-  const heroCard = document.querySelector(".hero-card");
-  const sigil = document.querySelector(".hero-sigil");
-  const offerSigil = document.querySelector(".offer-sigil");
+    button.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
 
-  orbs.forEach((orb, index) => {
-    const speed = (index + 1) * 0.07;
-    orb.style.transform = `translateY(${scrolled * speed}px)`;
+      faqItems.forEach((faq) => {
+        faq.classList.remove("active");
+        const faqAnswer = faq.querySelector(".faq-answer");
+        faqAnswer.style.maxHeight = null;
+      });
+
+      if (!isActive) {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
   });
 
-  if (heroCard) {
-    heroCard.style.transform = `translateY(${scrolled * 0.035}px)`;
-  }
+  // Smooth scroll + highlight offer
+  offerLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
 
-  if (sigil) {
-    sigil.style.transform = `translate(-50%, -50%) rotate(${scrolled * 0.02}deg)`;
-  }
+      if (offerSection) {
+        offerSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
 
-  if (offerSigil) {
-    offerSigil.style.transform = `translateY(-50%) rotate(${scrolled * -0.03}deg)`;
-  }
+        offerSection.classList.add("offer-highlighted");
+
+        setTimeout(() => {
+          offerSection.classList.remove("offer-highlighted");
+        }, 1600);
+      }
+    });
+  });
+
+  // Smooth internal nav for all anchors
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      const target = document.querySelector(targetId);
+
+      if (!target) return;
+
+      // Já tratado acima para oferta
+      if (targetId === "#oferta") return;
+
+      e.preventDefault();
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  });
 });
