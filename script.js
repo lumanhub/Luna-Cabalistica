@@ -4,9 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerLinks = document.querySelectorAll('a[href="#oferta"]');
   const offerSection = document.querySelector("#oferta");
 
-  // =============================
-  // ANIMAÇÃO DE REVEAL
-  // =============================
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -27,9 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // =============================
-  // FAQ (abre/fecha com animação suave)
-  // =============================
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
@@ -50,9 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // =============================
-  // SCROLL COM DESTAQUE NA OFERTA
-  // =============================
   offerLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -72,9 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // =============================
-  // SCROLL SUAVE GLOBAL
-  // =============================
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
