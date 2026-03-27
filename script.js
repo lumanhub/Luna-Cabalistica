@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
   const offerLinks = document.querySelectorAll('a[href="#oferta"]');
   const offerSection = document.querySelector("#oferta");
+  const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -76,6 +77,24 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
         block: "start",
       });
+    });
+  });
+
+  testimonialToggles.forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".testimonial-card");
+      const content = card.querySelector(".testimonial-content");
+      const isExpanded = content.classList.contains("expanded");
+
+      if (isExpanded) {
+        content.classList.remove("expanded");
+        content.classList.add("collapsed");
+        button.textContent = "Ver mais avaliação";
+      } else {
+        content.classList.remove("collapsed");
+        content.classList.add("expanded");
+        button.textContent = "Ver menos";
+      }
     });
   });
 });
