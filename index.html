@@ -1,100 +1,517 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const revealElements = document.querySelectorAll(".reveal");
-  const faqItems = document.querySelectorAll(".faq-item");
-  const offerLinks = document.querySelectorAll('a[href="#oferta"]');
-  const offerSection = document.querySelector("#oferta");
-  const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarot Cabalístico na Prática | Luna</title>
+  <meta
+    name="description"
+    content="Aprenda Tarot Cabalístico na Prática com profundidade, método e consciência interpretativa. Formação com Luna, baseada no Hermetismo."
+  />
 
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.12,
-    }
-  );
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-noise"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
 
-  revealElements.forEach((element) => {
-    if (!element.classList.contains("visible")) {
-      revealObserver.observe(element);
-    }
-  });
+  <header class="header">
+    <div class="container nav">
+      <a href="#topo" class="brand" aria-label="Ir para o topo">
+        <span class="brand-symbol">✦</span>
+        <span class="brand-name">Luna Cabalística</span>
+      </a>
 
-  faqItems.forEach((item) => {
-    const button = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#metodo">Método</a>
+        <a href="#video">Vídeo</a>
+        <a href="#publico">Pra quem é</a>
+        <a href="#luna">Sobre a Luna</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#oferta">Investimento</a>
+      </nav>
+    </div>
+  </header>
 
-    button.addEventListener("click", () => {
-      const isActive = item.classList.contains("active");
+  <main id="topo">
+    <section class="hero">
+      <div class="hero-stars"></div>
+      <div class="hero-sigil"></div>
 
-      faqItems.forEach((faq) => {
-        faq.classList.remove("active");
-        const faqAnswer = faq.querySelector(".faq-answer");
-        faqAnswer.style.maxHeight = null;
-      });
+      <div class="container hero-content">
+        <div class="hero-copy reveal visible">
+          <span class="eyebrow">FORMAÇÃO EM TAROT CABALÍSTICO</span>
 
-      if (!isActive) {
-        item.classList.add("active");
-        answer.style.maxHeight = answer.scrollHeight + "px";
-      }
-    });
-  });
+          <h1>
+            <span class="text-gradient">Tarot Cabalístico</span>
+            <span class="text-gold">na Prática</span>
+          </h1>
 
-  offerLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
+          <p class="hero-description">
+            Você pode começar decorando, mas isso nunca vai sustentar uma leitura real.
+            Porque o Tarot não é uma lista de significados soltos.
+            É uma linguagem simbólica estruturada.
+          </p>
 
-      if (offerSection) {
-        offerSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+          <div class="hero-actions">
+            <a href="#oferta" class="btn btn-primary btn-animated">Quero acessar a formação</a>
+          </div>
 
-        offerSection.classList.add("offer-highlighted");
+          <div class="hero-trust">
+            <div class="trust-item">
+              <strong>Base Hermética</strong>
+              <span>Estudo simbólico com profundidade real.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Método estruturado</strong>
+              <span>Mais clareza e firmeza na leitura.</span>
+            </div>
+            <div class="trust-item">
+              <strong>Leitura consciente</strong>
+              <span>Mais responsabilidade ao interpretar.</span>
+            </div>
+          </div>
+        </div>
 
-        setTimeout(() => {
-          offerSection.classList.remove("offer-highlighted");
-        }, 1600);
-      }
-    });
-  });
+        <div class="hero-visual reveal visible delay-1">
+          <div class="hero-card floating">
+            <div class="card-glow"></div>
 
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      const target = document.querySelector(targetId);
+            <div class="tarot-frame">
+              <div class="tarot-top">
+                <span>TAROT CABALÍSTICO</span>
+                <span>LUNA</span>
+              </div>
 
-      if (!target) return;
-      if (targetId === "#oferta") return;
+              <div class="tarot-center">
+                <div class="tree-life" aria-label="Árvore da Vida decorativa">
+                  <div class="tree-aura"></div>
 
-      e.preventDefault();
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    });
-  });
+                  <div class="tree-line l1"></div>
+                  <div class="tree-line l2"></div>
+                  <div class="tree-line l3"></div>
+                  <div class="tree-line l4"></div>
+                  <div class="tree-line l5"></div>
+                  <div class="tree-line l6"></div>
+                  <div class="tree-line l7"></div>
+                  <div class="tree-line l8"></div>
+                  <div class="tree-line l9"></div>
+                  <div class="tree-line l10"></div>
+                  <div class="tree-line l11"></div>
+                  <div class="tree-line l12"></div>
 
-  testimonialToggles.forEach((button) => {
-    button.addEventListener("click", () => {
-      const card = button.closest(".testimonial-card");
-      const content = card.querySelector(".testimonial-content");
-      const isExpanded = content.classList.contains("expanded");
+                  <div class="sephira s1"></div>
+                  <div class="sephira s2"></div>
+                  <div class="sephira s3"></div>
+                  <div class="sephira s4"></div>
+                  <div class="sephira s5"></div>
+                  <div class="sephira s6"></div>
+                  <div class="sephira s7"></div>
+                  <div class="sephira s8"></div>
+                  <div class="sephira s9"></div>
+                  <div class="sephira s10"></div>
+                </div>
+              </div>
 
-      if (isExpanded) {
-        content.classList.remove("expanded");
-        content.classList.add("collapsed");
-        button.textContent = "Ver mais avaliação";
-      } else {
-        content.classList.remove("collapsed");
-        content.classList.add("expanded");
-        button.textContent = "Ver menos";
-      }
-    });
-  });
-});
+              <div class="tarot-bottom">
+                <span>SIMBOLISMO</span>
+                <span>HERMETISMO</span>
+                <span>MÉTODO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="conteudo">
+      <div class="container narrow">
+        <div class="section-heading center reveal">
+          <span class="section-tag">UMA FORMAÇÃO PARA QUEM QUER IR ALÉM</span>
+          <h2>Você pode começar decorando, mas isso nunca vai sustentar uma leitura real.</h2>
+          <p>
+            Porque o Tarot não é uma lista de significados soltos.
+            É uma linguagem simbólica estruturada.
+          </p>
+        </div>
+
+        <div class="tension-box reveal">
+          <p>
+            Se você já abriu o Tarot e travou no meio da leitura, ou sentiu que estava apenas repetindo
+            significados decorados, não te falta intuição, falta conhecer a estrutura por trás das cartas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="metodo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">O QUE VOCÊ ENCONTRA AQUI</span>
+          <h2>Uma abordagem que une profundidade simbólica, clareza mental e método.</h2>
+          <p>
+            A formação foi pensada para conduzir você por um caminho mais lúcido,
+            consciente e estruturado no Tarot Cabalístico.
+          </p>
+        </div>
+
+        <div class="mini-highlight reveal">
+          <p>Estruturado na Árvore da Vida Cabalística.</p>
+        </div>
+
+        <div class="cards-grid pillars-grid">
+          <article class="info-card reveal">
+            <div class="icon">✦</div>
+            <h3>Base Hermética</h3>
+            <p>
+              Compreenda o Tarot além do significado superficial e desenvolva uma leitura simbólica fundamentada.
+            </p>
+          </article>
+
+          <article class="info-card reveal delay-1">
+            <div class="icon">⟡</div>
+            <h3>Método estruturado</h3>
+            <p>
+              Pare de depender de interpretações soltas e aprenda um raciocínio que sustenta qualquer leitura.
+            </p>
+          </article>
+
+          <article class="info-card reveal delay-2">
+            <div class="icon">☽</div>
+            <h3>Leitura consciente</h3>
+            <p>
+              Tenha segurança no que diz, sem depender de significados decorados.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section audience-section" id="publico">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="section-tag">CLAREZA ANTES DA DECISÃO</span>
+          <h2>Pra quem é, e pra quem não é</h2>
+          <p>
+            Assim você entende se essa formação realmente combina com o momento que você está vivendo no Tarot.
+          </p>
+        </div>
+
+        <div class="audience-duo">
+          <article class="audience-spot audience-yes reveal">
+            <span class="audience-label">PRA QUEM É</span>
+            <h3>Essa formação é para você que:</h3>
+            <ul class="audience-list">
+              <li>Quer começar a aprender Tarot com método estruturado</li>
+              <li>Já estuda Tarot, mas ainda se sente insegura para interpretar</li>
+              <li>É intuitiva e sensível e quer ampliar os estudos simbólicos</li>
+              <li>Já sabe ler e deseja conhecer a estrutura Cabalística</li>
+            </ul>
+          </article>
+
+          <article class="audience-spot audience-no reveal delay-1">
+            <span class="audience-label">PRA QUEM NÃO É</span>
+            <h3>Essa formação não é para quem:</h3>
+            <ul class="audience-list">
+              <li>Quer apenas decorar significados prontos</li>
+              <li>Busca atalhos sem profundidade</li>
+              <li>Não quer estudar estrutura simbólica</li>
+              <li>Procura respostas rápidas sem desenvolver leitura real</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="video">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="section-tag">APRESENTAÇÃO</span>
+          <h2>Assista e conheça mais sobre a formação.</h2>
+          <p>
+            Um vídeo para você sentir a energia, a profundidade e a proposta do Tarot Cabalístico na Prática.
+          </p>
+        </div>
+
+        <div class="video-box reveal">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/i3M81OSBlX0"
+              title="Tarot Cabalístico na Prática"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="luna">
+      <div class="container mentor-grid">
+        <div class="mentor-visual reveal">
+          <div class="mentor-photo-card">
+            <img
+              src="roberta-luna.png"
+              alt="Luna Cabalística"
+              class="mentor-photo"
+            />
+          </div>
+        </div>
+
+        <div class="mentor-copy reveal delay-1">
+          <span class="section-tag">SOBRE A LUNA</span>
+          <h2>Uma condução feita para quem busca profundidade real.</h2>
+
+          <p>
+            Psicoterapeuta, taróloga e numeróloga há 10 anos e professora de Tarot Cabalístico, com base no Hermetismo.
+            Meu trabalho une estudo simbólico, método e prática consciente, sem promessas fáceis ou espiritualidade superficial.
+          </p>
+
+          <p>
+            Uma condução para quem deseja ultrapassar interpretações rasas
+            e mergulhar em uma leitura simbólica mais lúcida, séria e transformadora.
+          </p>
+
+          <div class="mentor-points">
+            <span>Visão simbólica</span>
+            <span>Método estruturado</span>
+            <span>Profundidade espiritual</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="depoimentos">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="section-tag">DEPOIMENTOS</span>
+          <h2>Quem entra na formação sente a diferença na prática.</h2>
+          <p>
+            Alguns retornos de alunas que já estão vivenciando o Tarot Cabalístico na Prática.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">J</div>
+              <div>
+                <h3>Jaqueline</h3>
+                <span>Aluna</span>
+              </div>
+            </div>
+
+            <div class="testimonial-content collapsed">
+              <p>
+                Eu me surpreendi com a riqueza de conhecimentos da Professora que aborda com perfeição a conexão da Cabala com o tarot. O curso é excelente para todo tipo de alunos, desde iniciante (meu caso) até quem já tem mais domínio das leituras. Com os conteúdos, eu iniciei a tiragem para mim, mas já vou ampliar para amigos... estou adorando o aprendizado!
+              </p>
+            </div>
+
+            <button class="testimonial-toggle" type="button">Ver mais avaliação</button>
+          </article>
+
+          <article class="testimonial-card reveal delay-1">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <h3>Michele</h3>
+                <span>Aluna</span>
+              </div>
+            </div>
+
+            <div class="testimonial-content collapsed">
+              <p>
+                Gente, esse curso de tarô tem sido um verdadeiro divisor de águas na minha vida. Diferente de tudo que eu já estudei antes, aqui eu não aprendi apenas significados de cartas, eu aprendi a sentir, interpretar e confiar na minha intuição de forma profunda e segura.
+
+                O grande diferencial, pra mim, está na forma como o conteúdo é passado: claro, direto, mas ao mesmo tempo extremamente transformador. Além disso, o fato de ser um tarô cabalístico traz uma profundidade única, muito mais rica e estruturada do que outros cursos que já fiz. Não é só técnica, é conexão. É um verdadeiro despertar.
+
+                Em pouco tempo de estudo, eu já me senti segura o suficiente para começar a fazer tiragens, algo que antes parecia distante pra mim. Hoje eu me sinto muito mais confiante nas minhas leituras, mais alinhada com a minha espiritualidade e, principalmente, mais preparada para orientar outras pessoas.
+
+                Esse curso não só aprimorou meu conhecimento, ele mudou a forma como eu enxergo o tarô e o meu próprio caminho. Sem dúvidas, foi um dos melhores investimentos que já fiz na minha vida.
+              </p>
+            </div>
+
+            <button class="testimonial-toggle" type="button">Ver mais avaliação</button>
+          </article>
+
+          <article class="testimonial-card reveal delay-2">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <h3>Magda de Paula</h3>
+                <span>Aluna</span>
+              </div>
+            </div>
+
+            <div class="testimonial-content collapsed">
+              <p>
+                Fazer o curso de Tarô Cabalístico com a Professora Luna foi uma experiência simplesmente transformadora na minha vida. Muito mais do que aprender sobre as cartas, eu mergulhei em um conhecimento profundo, espiritual e cheio de significado.
+
+                A didática dela é incrível, clara, acolhedora e ao mesmo tempo muito profunda. Cada aula traz não só entendimento técnico, mas também expansão de consciência. Senti que realmente evoluí como taróloga e como ser humano.
+
+                O Tarô Cabalístico, através da forma como ela ensina, deixa de ser apenas um oráculo e passa a ser uma ferramenta poderosa de autoconhecimento e conexão espiritual.
+
+                Sou imensamente grata por todo o aprendizado, pela troca e pela energia transmitida em cada encontro. Recomendo de olhos fechados para quem deseja se aprofundar de verdade no Tarô e na espiritualidade.
+              </p>
+            </div>
+
+            <button class="testimonial-toggle" type="button">Ver mais avaliação</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="faq">
+      <div class="container narrow">
+        <div class="section-heading center reveal">
+          <span class="section-tag">DÚVIDAS FREQUENTES</span>
+          <h2>Se você ainda está em dúvida, isso irá te ajudar a decidir:</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              Preciso já saber Tarot para começar?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Não necessariamente. O mais importante é ter abertura para estudar com seriedade, estrutura e profundidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal delay-1">
+            <button class="faq-question" type="button">
+              Esse curso é só significado de cartas?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Conteúdos soltos te dão informação, mas não te ensinam a sustentar uma leitura.
+                Aqui você desenvolve um raciocínio para não depender de vídeos, listas ou significados prontos.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal delay-2">
+            <button class="faq-question" type="button">
+              Para quem essa formação é ideal?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Para quem ainda trava na hora de interpretar.
+                Para quem sente que está apenas repetindo palavras-chave.
+                E para quem quer finalmente ler com segurança e assertividade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offer-section" id="oferta">
+      <div class="container">
+        <div class="offer-portal">
+          <div class="energy-glow"></div>
+          <div class="offer-sigil"></div>
+
+          <div class="offer-header reveal">
+            <span class="offer-eyebrow">INVESTIMENTO</span>
+            <h2>Tarot Cabalístico na Prática</h2>
+            <p>
+              Ao entrar na formação, você acessa um estudo comprometido com profundidade,
+              método e responsabilidade interpretativa.
+            </p>
+          </div>
+
+          <div class="offer-content-grid">
+            <div class="offer-includes reveal delay-1">
+              <h3>Ao entrar na formação, você recebe:</h3>
+              <ul class="feature-list gold">
+                <li>Acesso vitalício com atualizações e avanço do conteúdo.</li>
+                <li>Aulas de acompanhamento e evolução ao vivo.</li>
+                <li>Manual de tarot cabalístico sistematizado para maior compreensão, consulta e acompanhamento em PDF.</li>
+                <li class="feature-note">Este será vendido à parte quando finalizado.</li>
+              </ul>
+            </div>
+
+            <div class="price-oracle reveal delay-2">
+              <span class="price-label">OFERTA ESPECIAL</span>
+
+              <div class="price-old">
+                De 697,00
+              </div>
+
+              <div class="price-main">
+                12x <span>51,40</span><small>*</small>
+              </div>
+
+              <p class="price-alt">Ou no pix por apenas <strong>497,00</strong></p>
+
+              <a href="#oferta" class="btn-mystic btn-animated">
+                QUERO ACESSAR A FORMAÇÃO
+              </a>
+
+              <p class="price-secure">
+                PAGAMENTO 100% SEGURO COM ACESSO IMEDIATO.
+              </p>
+
+              <div class="value-compare">
+                <h3>O valor não está apenas no conteúdo.</h3>
+                <ul>
+                  <li>• Mais clareza interpretativa</li>
+                  <li>• Mais profundidade simbólica</li>
+                  <li>• Mais responsabilidade na leitura</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="final-cta-box reveal">
+          <span class="section-tag">ÚLTIMO CHAMADO</span>
+          <h2>O Tarot pode ser mais profundo do que te ensinaram.</h2>
+          <p>
+            Se você sente que chegou a hora de estudar com mais consciência, método e verdade,
+            esse é o momento de começar.
+          </p>
+
+          <a href="#oferta" class="btn btn-primary btn-animated">Quero aprender com a Luna</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Luna Cabalística. Todos os direitos reservados.</p>
+
+      <div class="footer-links">
+        <a href="#topo">Topo</a>
+        <a href="#oferta">Investimento</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
