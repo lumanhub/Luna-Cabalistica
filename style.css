@@ -2,32 +2,18 @@
   --bg: #040102;
   --bg-soft: #090203;
   --bg-soft-2: #130304;
-  --card: rgba(255, 255, 255, 0.04);
-  --card-strong: rgba(255, 255, 255, 0.07);
-
   --text: #f8efea;
   --text-soft: #dccaca;
   --text-muted: #ab9191;
-
   --red-1: #ff4d57;
   --red-2: #e21f36;
   --red-3: #a40c1e;
-  --red-4: #5f0711;
-
   --gold: #d7a05f;
   --gold-soft: #f2d6a4;
   --gold-strong: #f5c37a;
-
   --border: rgba(255, 255, 255, 0.09);
-  --border-red: rgba(226, 31, 54, 0.32);
-
   --shadow-lg: 0 30px 90px rgba(0, 0, 0, 0.55);
   --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.35);
-
-  --radius-xl: 34px;
-  --radius-lg: 26px;
-  --radius-md: 18px;
-
   --container: 1200px;
   --transition: 0.4s ease;
 }
@@ -204,7 +190,7 @@ ul {
   padding: 0 26px;
   border-radius: 999px;
   font-weight: 700;
-  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border var(--transition), filter var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -407,7 +393,6 @@ ul {
   min-height: 500px;
 }
 
-/* Árvore */
 .tree-life {
   position: relative;
   width: 290px;
@@ -634,7 +619,6 @@ ul {
   border: 0;
 }
 
-/* Pra quem é / não é */
 .audience-section {
   background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(226,31,54,0.045));
 }
@@ -662,11 +646,8 @@ ul {
 
 .audience-yes {
   border: 1px solid rgba(226, 31, 54, 0.34);
-  background:
-    linear-gradient(180deg, rgba(226,31,54,0.12), rgba(255,255,255,0.03));
-  box-shadow:
-    0 0 40px rgba(226,31,54,0.12),
-    var(--shadow-md);
+  background: linear-gradient(180deg, rgba(226,31,54,0.12), rgba(255,255,255,0.03));
+  box-shadow: 0 0 40px rgba(226,31,54,0.12), var(--shadow-md);
 }
 
 .audience-yes::before {
@@ -681,16 +662,14 @@ ul {
 
 .audience-no {
   border: 1px solid rgba(215,160,95,0.24);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
 }
 
 .audience-no::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at top left, rgba(215,160,95,0.10), transparent 28%);
+  background: radial-gradient(circle at top left, rgba(215,160,95,0.10), transparent 28%);
   pointer-events: none;
 }
 
@@ -776,63 +755,6 @@ ul {
   color: #ffe0be;
 }
 
-.timeline {
-  position: relative;
-  display: grid;
-  gap: 18px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  bottom: 10px;
-  width: 1px;
-  background: linear-gradient(180deg, rgba(226, 31, 54, 0.35), rgba(255,220,160,0.10));
-}
-
-.timeline-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 22px;
-  align-items: start;
-  padding: 16px 0;
-}
-
-.timeline-number {
-  width: 80px;
-  height: 80px;
-  border-radius: 24px;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  color: #ffe0c4;
-  background: linear-gradient(180deg, rgba(226, 31, 54, 0.14), rgba(255,210,150,0.05));
-  border: 1px solid rgba(226, 31, 54, 0.24);
-  z-index: 1;
-}
-
-.timeline-content {
-  padding: 22px 24px;
-  border-radius: 24px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.035);
-  backdrop-filter: blur(12px);
-}
-
-.timeline-content h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.timeline-content p {
-  color: var(--text-soft);
-  line-height: 1.8;
-}
-
-/* Depoimentos */
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -946,6 +868,54 @@ ul {
   border-color: rgba(215,160,95,0.46);
   color: #fff3de;
   background: rgba(255,255,255,0.05);
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-question span {
+  color: #ffc27e;
+  font-size: 1.4rem;
+  transition: transform var(--transition);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+  padding: 0 24px 22px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
 }
 
 .offer-section {
@@ -1178,54 +1148,6 @@ ul {
 
 .value-compare li {
   color: #d6c4c4;
-}
-
-.faq-list {
-  display: grid;
-  gap: 16px;
-}
-
-.faq-item {
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  background: rgba(255,255,255,0.035);
-  overflow: hidden;
-}
-
-.faq-question {
-  width: 100%;
-  background: transparent;
-  color: var(--text);
-  border: none;
-  padding: 22px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.faq-question span {
-  color: #ffc27e;
-  font-size: 1.4rem;
-  transition: transform var(--transition);
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-
-.faq-answer p {
-  padding: 0 24px 22px;
-  color: var(--text-soft);
-  line-height: 1.75;
-}
-
-.faq-item.active .faq-question span {
-  transform: rotate(45deg);
 }
 
 .final-cta-box {
@@ -1536,40 +1458,4 @@ ul {
   .l9  { width: 66px; left: 94px;  top: 196px; transform: rotate(48deg); }
   .l10 { width: 66px; left: 126px; top: 196px; transform: rotate(132deg); }
   .l11 { width: 96px; left: 126px; top: 228px; transform: rotate(90deg); }
-  .l12 { width: 64px; left: 94px;  top: 324px; transform: rotate(0deg); }
-
-  .sephira {
-    width: 28px;
-    height: 28px;
-  }
-
-  .s1  { top: 8px;   left: 111px; }
-  .s2  { top: 72px;  left: 47px; }
-  .s3  { top: 72px;  left: 175px; }
-  .s4  { top: 136px; left: 47px; }
-  .s5  { top: 136px; left: 111px; }
-  .s6  { top: 136px; left: 175px; }
-  .s7  { top: 200px; left: 47px; }
-  .s8  { top: 200px; left: 175px; }
-  .s9  { top: 264px; left: 111px; }
-  .s10 { top: 328px; left: 111px; }
-
-  .tarot-top,
-  .tarot-bottom {
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-  }
-
-  .faq-question {
-    padding: 20px 18px;
-  }
-
-  .faq-answer p {
-    padding: 0 18px 18px;
-  }
-
-  .btn-mystic {
-    font-size: 0.92rem;
-    padding: 0 16px;
-  }
-}
+  .l12 { width: 
