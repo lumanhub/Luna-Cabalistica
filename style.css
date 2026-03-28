@@ -1,569 +1,1290 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarot Cabalístico na Prática | Luna</title>
-  <meta
-    name="description"
-    content="Aprenda Tarot Cabalístico na Prática com profundidade, método e consciência interpretativa. Formação com Luna, baseada no Hermetismo."
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="page-noise"></div>
-  <div class="bg-grid"></div>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="bg-orb orb-3"></div>
-
-  <header class="header">
-    <div class="container nav">
-      <a href="#topo" class="brand" aria-label="Ir para o topo">
-        <span class="brand-symbol">✦</span>
-        <span class="brand-name">Luna Cabalística</span>
-      </a>
-
-      <nav class="menu" aria-label="Menu principal">
-        <a href="#conteudo">Conteúdo</a>
-        <a href="#video">Vídeo</a>
-        <a href="#publico">Para quem</a>
-        <a href="#luna">Sobre a Luna</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#faq">Dúvidas</a>
-        <a href="#oferta">Investimento</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="topo">
-    <section class="hero">
-      <div class="hero-stars"></div>
-      <div class="hero-sigil"></div>
-
-      <div class="container hero-content">
-        <div class="hero-copy reveal visible">
-          <span class="eyebrow">FORMAÇÃO EM TAROT CABALÍSTICO</span>
-
-          <h1>
-            <span class="text-gradient">Tarot Cabalístico</span>
-            <span class="text-gold">na Prática</span>
-          </h1>
-
-          <p class="hero-description">
-            Um método estruturado para aprender Tarot com profundidade,
-            clareza e segurança na interpretação, sem depender de significados decorados.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#oferta" class="btn btn-primary btn-animated">Quero acessar a formação</a>
-          </div>
-
-          <div class="hero-trust">
-            <div class="trust-item">
-              <strong>Base Hermética</strong>
-              <span>Estudo simbólico com profundidade real.</span>
-            </div>
-            <div class="trust-item">
-              <strong>Método estruturado</strong>
-              <span>Mais clareza e firmeza na leitura.</span>
-            </div>
-            <div class="trust-item">
-              <strong>Leitura consciente</strong>
-              <span>Mais responsabilidade ao interpretar.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal visible delay-1">
-          <div class="hero-card floating">
-            <div class="card-glow"></div>
-
-            <div class="tarot-frame">
-              <div class="tarot-top">
-                <span>TAROT CABALÍSTICO</span>
-                <span>LUNA</span>
-              </div>
-
-              <div class="tarot-center">
-                <div class="tree-life" aria-label="Árvore da Vida decorativa">
-                  <div class="tree-aura"></div>
-
-                  <div class="tree-line l1"></div>
-                  <div class="tree-line l2"></div>
-                  <div class="tree-line l3"></div>
-                  <div class="tree-line l4"></div>
-                  <div class="tree-line l5"></div>
-                  <div class="tree-line l6"></div>
-                  <div class="tree-line l7"></div>
-                  <div class="tree-line l8"></div>
-                  <div class="tree-line l9"></div>
-                  <div class="tree-line l10"></div>
-                  <div class="tree-line l11"></div>
-                  <div class="tree-line l12"></div>
-
-                  <div class="sephira s1"></div>
-                  <div class="sephira s2"></div>
-                  <div class="sephira s3"></div>
-                  <div class="sephira s4"></div>
-                  <div class="sephira s5"></div>
-                  <div class="sephira s6"></div>
-                  <div class="sephira s7"></div>
-                  <div class="sephira s8"></div>
-                  <div class="sephira s9"></div>
-                  <div class="sephira s10"></div>
-                </div>
-              </div>
-
-              <div class="tarot-bottom">
-                <span>SIMBOLISMO</span>
-                <span>HERMETISMO</span>
-                <span>MÉTODO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section intro" id="conteudo">
-      <div class="container narrow">
-        <div class="section-heading center reveal">
-          <span class="section-tag">UMA FORMAÇÃO PARA QUEM QUER IR ALÉM</span>
-          <h2>Não é sobre decorar cartas. É sobre entender o que elas realmente dizem.</h2>
-          <p>
-            Aqui, a proposta é conduzir você por um estudo sério, simbólico e estruturado,
-            com mais clareza no raciocínio e mais segurança na leitura.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="metodo">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-tag">O QUE VOCÊ ENCONTRA AQUI</span>
-          <h2>Uma abordagem que une profundidade simbólica, clareza mental e método.</h2>
-          <p>
-            A formação foi pensada para conduzir você por um caminho mais lúcido,
-            consciente e estruturado no Tarot Cabalístico.
-          </p>
-        </div>
-
-        <div class="cards-grid">
-          <article class="info-card reveal">
-            <div class="icon">✦</div>
-            <h3>Fundamentos do Tarot Cabalístico</h3>
-            <p>
-              Compreenda a lógica estrutural do Tarot Cabalístico e a base que sustenta uma leitura mais séria.
-            </p>
-          </article>
-
-          <article class="info-card reveal delay-1">
-            <div class="icon">☉</div>
-            <h3>Simbolismo e linguagem arquetípica</h3>
-            <p>
-              Aprenda a enxergar os símbolos como linguagem viva, não como fórmula pronta.
-            </p>
-          </article>
-
-          <article class="info-card reveal delay-2">
-            <div class="icon">⌘</div>
-            <h3>Hermetismo aplicado</h3>
-            <p>
-              Entenda como os princípios herméticos ampliam a percepção e aprofundam a interpretação.
-            </p>
-          </article>
-
-          <article class="info-card reveal">
-            <div class="icon">⟡</div>
-            <h3>Método interpretativo</h3>
-            <p>
-              Desenvolva raciocínio simbólico e mais firmeza para interpretar com coerência.
-            </p>
-          </article>
-
-          <article class="info-card reveal delay-1">
-            <div class="icon">☽</div>
-            <h3>Prática consciente</h3>
-            <p>
-              Mais do que tirar cartas, você aprende a sustentar a leitura com presença e sentido.
-            </p>
-          </article>
-
-          <article class="info-card reveal delay-2">
-            <div class="icon">✺</div>
-            <h3>Autoconhecimento real</h3>
-            <p>
-              O Tarot como ferramenta de leitura de realidade, percepção interna e amadurecimento interpretativo.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="video">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <span class="section-tag">APRESENTAÇÃO</span>
-          <h2>Assista e conheça mais sobre a formação.</h2>
-          <p>
-            Um vídeo para você sentir a energia, a profundidade e a proposta do Tarot Cabalístico na Prática.
-          </p>
-        </div>
-
-        <div class="video-box reveal">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/i3M81OSBlX0"
-              title="Tarot Cabalístico na Prática"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publico">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <span class="section-tag">PARA QUEM É ESSA FORMAÇÃO</span>
-          <h2>Essa formação foi feita para diferentes momentos da sua jornada no Tarot.</h2>
-        </div>
-
-        <div class="audience-grid">
-          <article class="audience-card reveal">
-            <p>Pra quem quer começar a aprender Tarot com método estruturado</p>
-          </article>
-
-          <article class="audience-card reveal delay-1">
-            <p>Pra quem já estuda Tarot mas ainda se sente insegura para interpretar</p>
-          </article>
-
-          <article class="audience-card reveal delay-2">
-            <p>Pra quem é intuitiva e sensível e quer ampliar os estudos simbólicos</p>
-          </article>
-
-          <article class="audience-card reveal">
-            <p>Pra quem já sabe ler e deseja conhecer a estrutura Cabalística</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="luna">
-      <div class="container mentor-grid">
-        <div class="mentor-visual reveal">
-          <div class="mentor-photo-card">
-            <img
-              src="roberta-luna.png"
-              alt="Luna Cabalística"
-              class="mentor-photo"
-            />
-          </div>
-        </div>
-
-        <div class="mentor-copy reveal delay-1">
-          <span class="section-tag">SOBRE A LUNA</span>
-          <h2>Uma condução feita para quem busca profundidade real.</h2>
-
-          <p>
-            Psicoterapeuta, taróloga e numeróloga há 10 anos e professora de Tarot Cabalístico, com base no Hermetismo.
-            Meu trabalho une estudo simbólico, método e prática consciente, sem promessas fáceis ou espiritualidade superficial.
-          </p>
-
-          <p>
-            Uma condução para quem deseja ultrapassar interpretações rasas
-            e mergulhar em uma leitura simbólica mais lúcida, séria e transformadora.
-          </p>
-
-          <div class="mentor-points">
-            <span>Visão simbólica</span>
-            <span>Método estruturado</span>
-            <span>Profundidade espiritual</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <span class="section-tag">COMO FUNCIONA</span>
-          <h2>Uma estrutura feita para conduzir você com clareza.</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-number">01</div>
-            <div class="timeline-content">
-              <h3>Você entra na formação</h3>
-              <p>
-                Acessa o conteúdo e mergulha em uma proposta séria de estudo, sem superficialidade.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal delay-1">
-            <div class="timeline-number">02</div>
-            <div class="timeline-content">
-              <h3>Compreende a base simbólica</h3>
-              <p>
-                Aprende a enxergar a estrutura simbólica do Tarot com lógica, profundidade e consciência.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal delay-2">
-            <div class="timeline-number">03</div>
-            <div class="timeline-content">
-              <h3>Desenvolve leitura mais lúcida</h3>
-              <p>
-                Começa a interpretar com mais segurança, responsabilidade e sentido real diante das cartas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="depoimentos">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <span class="section-tag">DEPOIMENTOS</span>
-          <h2>Quem entra na formação sente a diferença na prática.</h2>
-          <p>
-            Alguns retornos de alunas que já estão vivenciando o Tarot Cabalístico na Prática.
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-          <article class="testimonial-card reveal">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">J</div>
-              <div>
-                <h3>Jaqueline</h3>
-                <span>Aluna</span>
-              </div>
-            </div>
-
-            <div class="testimonial-content collapsed">
-              <p>
-                Eu me surpreendi com a riqueza de conhecimentos da Professora que aborda com perfeição a conexão da Cabala com o tarot. O curso é excelente para todo tipo de alunos, desde iniciante (meu caso) até quem já tem mais domínio das leituras. Com os conteúdos, eu iniciei a tiragem para mim, mas já vou ampliar para amigos... estou adorando o aprendizado!
-              </p>
-            </div>
-
-            <button class="testimonial-toggle" type="button">Ver mais avaliação</button>
-          </article>
-
-          <article class="testimonial-card reveal delay-1">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">A</div>
-              <div>
-                <h3>Alessandra</h3>
-                <span>Aluna</span>
-              </div>
-            </div>
-
-            <div class="testimonial-content collapsed">
-              <p>
-                Gente, esse curso de tarô tem sido um verdadeiro divisor de águas na minha vida. Diferente de tudo que eu já estudei antes, aqui eu não aprendi apenas significados de cartas, eu aprendi a sentir, interpretar e confiar na minha intuição de forma profunda e segura.
-
-                O grande diferencial, pra mim, está na forma como o conteúdo é passado: claro, direto, mas ao mesmo tempo extremamente transformador. Além disso, o fato de ser um tarô cabalístico traz uma profundidade única, muito mais rica e estruturada do que outros cursos que já fiz. Não é só técnica, é conexão. É um verdadeiro despertar.
-
-                Em pouco tempo de estudo, eu já me senti segura o suficiente para começar a fazer tiragens, algo que antes parecia distante pra mim. Hoje eu me sinto muito mais confiante nas minhas leituras, mais alinhada com a minha espiritualidade e, principalmente, mais preparada para orientar outras pessoas.
-
-                Esse curso não só aprimorou meu conhecimento, ele mudou a forma como eu enxergo o tarô e o meu próprio caminho. Sem dúvidas, foi um dos melhores investimentos que já fiz na minha vida.
-              </p>
-            </div>
-
-            <button class="testimonial-toggle" type="button">Ver mais avaliação</button>
-          </article>
-
-          <article class="testimonial-card reveal delay-2">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">M</div>
-              <div>
-                <h3>Magda de Paula</h3>
-                <span>Aluna</span>
-              </div>
-            </div>
-
-            <div class="testimonial-content collapsed">
-              <p>
-                Fazer o curso de Tarô Cabalístico com a Professora Luna foi uma experiência simplesmente transformadora na minha vida. Muito mais do que aprender sobre as cartas, eu mergulhei em um conhecimento profundo, espiritual e cheio de significado.
-
-                A didática dela é incrível, clara, acolhedora e ao mesmo tempo muito profunda. Cada aula traz não só entendimento técnico, mas também expansão de consciência. Senti que realmente evoluí como taróloga e como ser humano.
-
-                O Tarô Cabalístico, através da forma como ela ensina, deixa de ser apenas um oráculo e passa a ser uma ferramenta poderosa de autoconhecimento e conexão espiritual.
-
-                Sou imensamente grata por todo o aprendizado, pela troca e pela energia transmitida em cada encontro. Recomendo de olhos fechados para quem deseja se aprofundar de verdade no Tarô e na espiritualidade.
-              </p>
-            </div>
-
-            <button class="testimonial-toggle" type="button">Ver mais avaliação</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section offer-section" id="oferta">
-      <div class="container">
-        <div class="offer-portal">
-          <div class="energy-glow"></div>
-          <div class="offer-sigil"></div>
-
-          <div class="offer-header reveal">
-            <span class="offer-eyebrow">INVESTIMENTO</span>
-            <h2>Tarot Cabalístico na Prática</h2>
-            <p>
-              Ao entrar na formação, você acessa um estudo comprometido com profundidade,
-              método e responsabilidade interpretativa.
-            </p>
-          </div>
-
-          <div class="offer-content-grid">
-            <div class="offer-includes reveal delay-1">
-              <h3>Ao entrar na formação, você recebe:</h3>
-              <ul class="feature-list gold">
-                <li>Acesso vitalício com atualizações e avanço do conteúdo.</li>
-                <li>Aulas de acompanhamento e evolução ao vivo.</li>
-                <li>Manual de tarot cabalístico sistematizado para maior compreensão, consulta e acompanhamento em PDF.</li>
-                <li class="feature-note">Este será vendido à parte quando finalizado.</li>
-              </ul>
-            </div>
-
-            <div class="price-oracle reveal delay-2">
-              <span class="price-label">OFERTA ESPECIAL</span>
-
-              <div class="price-old">
-                De 697,00
-              </div>
-
-              <div class="price-main">
-                12x <span>51,40</span><small>*</small>
-              </div>
-
-              <p class="price-alt">Ou no pix por apenas <strong>497,00</strong></p>
-
-              <a href="#oferta" class="btn-mystic btn-animated">
-                QUERO ACESSAR A FORMAÇÃO
-              </a>
-
-              <p class="price-secure">
-                PAGAMENTO 100% SEGURO COM ACESSO IMEDIATO.
-              </p>
-
-              <div class="value-compare">
-                <h3>O valor não está apenas no conteúdo.</h3>
-                <ul>
-                  <li>• Mais clareza interpretativa</li>
-                  <li>• Mais profundidade simbólica</li>
-                  <li>• Mais responsabilidade na leitura</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="faq">
-      <div class="container narrow">
-        <div class="section-heading center reveal">
-          <span class="section-tag">DÚVIDAS FREQUENTES</span>
-          <h2>Talvez essa seja a resposta que você precisava antes de entrar.</h2>
-        </div>
-
-        <div class="faq-list">
-          <div class="faq-item reveal">
-            <button class="faq-question" type="button">
-              Preciso já saber Tarot para começar?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Não necessariamente. O mais importante é ter abertura para estudar com seriedade e profundidade.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item reveal delay-1">
-            <button class="faq-question" type="button">
-              Esse curso é só significado de cartas?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Não. A proposta é formar base interpretativa, visão simbólica e leitura mais consciente.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item reveal delay-2">
-            <button class="faq-question" type="button">
-              Qual a diferença dessa formação para conteúdos soltos da internet?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Aqui existe método, coerência, profundidade e uma condução comprometida com responsabilidade interpretativa.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item reveal">
-            <button class="faq-question" type="button">
-              Para quem essa formação é ideal?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Para quem quer ultrapassar leituras rasas e estudar Tarot como linguagem simbólica, autoconhecimento e leitura de realidade.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <div class="final-cta-box reveal">
-          <span class="section-tag">ÚLTIMO CHAMADO</span>
-          <h2>O Tarot pode ser mais profundo do que te ensinaram.</h2>
-          <p>
-            Se você sente que chegou a hora de estudar com mais consciência, método e verdade,
-            esse é o momento de começar.
-          </p>
-
-          <a href="#oferta" class="btn btn-primary btn-animated">Quero aprender com a Luna</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Luna Cabalística. Todos os direitos reservados.</p>
-
-      <div class="footer-links">
-        <a href="#topo">Topo</a>
-        <a href="#oferta">Investimento</a>
-        <a href="#faq">FAQ</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+:root {
+  --bg: #040102;
+  --bg-soft: #090203;
+  --bg-soft-2: #130304;
+  --card: rgba(255, 255, 255, 0.04);
+  --card-strong: rgba(255, 255, 255, 0.07);
+
+  --text: #f8efea;
+  --text-soft: #dccaca;
+  --text-muted: #ab9191;
+
+  --red-1: #ff4d57;
+  --red-2: #e21f36;
+  --red-3: #a40c1e;
+  --red-4: #5f0711;
+
+  --gold: #d7a05f;
+  --gold-soft: #f2d6a4;
+  --gold-strong: #f5c37a;
+
+  --border: rgba(255, 255, 255, 0.09);
+  --border-red: rgba(226, 31, 54, 0.32);
+
+  --shadow-lg: 0 30px 90px rgba(0, 0, 0, 0.55);
+  --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+  --radius-xl: 34px;
+  --radius-lg: 26px;
+  --radius-md: 18px;
+
+  --container: 1200px;
+  --transition: 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(226, 31, 54, 0.25);
+  color: #fff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(226, 31, 54, 0.22), transparent 30%),
+    radial-gradient(circle at 82% 18%, rgba(255, 77, 87, 0.14), transparent 20%),
+    radial-gradient(circle at 18% 82%, rgba(164, 12, 30, 0.18), transparent 24%),
+    linear-gradient(180deg, #020000 0%, #080102 42%, #030102 100%);
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(100% - 40px, var(--container));
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.narrow {
+  width: min(100% - 40px, 900px);
+  margin: 0 auto;
+}
+
+.page-noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image:
+    radial-gradient(circle at 20% 20%, #ffffff 0.6px, transparent 0.6px),
+    radial-gradient(circle at 80% 40%, #ffffff 0.5px, transparent 0.5px),
+    radial-gradient(circle at 40% 80%, #ffffff 0.4px, transparent 0.4px);
+  background-size: 180px 180px;
+  z-index: 1;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: radial-gradient(circle at center, black 38%, transparent 85%);
+  -webkit-mask-image: radial-gradient(circle at center, black 38%, transparent 85%);
+  opacity: 0.32;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+}
+
+.orb-1 {
+  width: 320px;
+  height: 320px;
+  background: rgba(226, 31, 54, 0.28);
+  top: 8%;
+  left: -50px;
+}
+
+.orb-2 {
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 205, 120, 0.12);
+  top: 28%;
+  right: 6%;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(164, 12, 30, 0.24);
+  bottom: 10%;
+  left: 18%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(18px);
+  background: rgba(5, 2, 8, 0.55);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-symbol {
+  color: var(--gold);
+  font-size: 1.1rem;
+}
+
+.brand-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+}
+
+.menu a {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.menu a:hover {
+  color: #ffe0b7;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border var(--transition), filter var(--transition);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #fff5f4;
+  background: linear-gradient(135deg, #ff3c4d 0%, #d3112b 48%, #b97a34 100%);
+  box-shadow: 0 12px 30px rgba(211, 17, 43, 0.34);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 18px 42px rgba(211, 17, 43, 0.42);
+}
+
+.hero {
+  position: relative;
+  padding: 105px 0 75px;
+  overflow: hidden;
+}
+
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(255,255,255,0.7) 0.7px, transparent 0.9px),
+    radial-gradient(circle at 75% 40%, rgba(255,225,170,0.45) 0.8px, transparent 1px),
+    radial-gradient(circle at 55% 80%, rgba(255,255,255,0.35) 0.7px, transparent 1px),
+    radial-gradient(circle at 90% 12%, rgba(255,220,170,0.55) 0.7px, transparent 1px);
+  background-size: 240px 240px;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.hero-sigil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 760px;
+  height: 760px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(226, 31, 54, 0.10);
+  box-shadow:
+    0 0 0 80px rgba(226, 31, 54, 0.03),
+    0 0 0 180px rgba(215, 160, 95, 0.02);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.eyebrow,
+.section-tag,
+.offer-eyebrow {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffd2d8;
+}
+
+.hero-copy h1 {
+  margin-top: 18px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  max-width: 760px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffe3dc 0%, #ff6b78 24%, #ff3246 52%, #cc1730 76%, #f2d6a4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gold {
+  display: block;
+  background: linear-gradient(135deg, #fff0d6 0%, #f2d6a4 40%, #d7a05f 78%, #ffd08b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-description {
+  margin-top: 24px;
+  color: var(--text-soft);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  max-width: 670px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.hero-trust {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.trust-item {
+  min-width: 160px;
+  padding: 16px 18px;
+  border: 1px solid rgba(215, 160, 95, 0.18);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.035);
+  backdrop-filter: blur(14px);
+}
+
+.trust-item strong {
+  display: block;
+  color: #ffe5c5;
+  margin-bottom: 6px;
+}
+
+.trust-item span {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  position: relative;
+  width: min(100%, 460px);
+  padding: 22px;
+  border-radius: 34px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at top, rgba(226, 31, 54, 0.22), transparent 35%),
+    radial-gradient(circle at bottom, rgba(215, 160, 95, 0.10), transparent 40%);
+  pointer-events: none;
+}
+
+.tarot-frame {
+  position: relative;
+  border-radius: 28px;
+  min-height: 620px;
+  padding: 24px;
+  border: 1px solid rgba(226, 31, 54, 0.22);
+  background:
+    linear-gradient(180deg, rgba(12, 2, 4, 0.96), rgba(8, 1, 2, 0.98)),
+    radial-gradient(circle at center, rgba(226, 31, 54, 0.12), transparent 45%);
+  overflow: hidden;
+}
+
+.tarot-frame::before,
+.tarot-frame::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.04);
+  pointer-events: none;
+}
+
+.tarot-top,
+.tarot-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #cba989;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+}
+
+.tarot-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.tree-life {
+  position: relative;
+  width: 290px;
+  height: 430px;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 24px rgba(226, 31, 54, 0.22));
+  animation: treeFloat 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.tree-aura {
+  position: absolute;
+  inset: 10px 48px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow:
+    0 0 0 18px rgba(226, 31, 54, 0.03),
+    0 0 55px rgba(215, 160, 95, 0.08);
+  pointer-events: none;
+  animation: auraPulse 4.5s ease-in-out infinite;
+}
+
+.tree-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 223, 186, 0.25),
+    rgba(255, 205, 138, 0.95),
+    rgba(255, 90, 108, 0.85)
+  );
+  transform-origin: left center;
+  box-shadow: 0 0 10px rgba(255, 120, 120, 0.22);
+  border-radius: 999px;
+}
+
+.l1  { width: 74px; left: 145px; top: 38px;  transform: rotate(144deg); }
+.l2  { width: 74px; left: 145px; top: 38px;  transform: rotate(36deg); }
+.l3  { width: 74px; left: 74px;  top: 110px; transform: rotate(0deg); }
+.l4  { width: 72px; left: 110px; top: 74px;  transform: rotate(90deg); }
+.l5  { width: 76px; left: 110px; top: 146px; transform: rotate(132deg); }
+.l6  { width: 76px; left: 144px; top: 146px; transform: rotate(48deg); }
+.l7  { width: 72px; left: 145px; top: 182px; transform: rotate(90deg); }
+.l8  { width: 74px; left: 74px;  top: 255px; transform: rotate(0deg); }
+.l9  { width: 76px; left: 110px; top: 218px; transform: rotate(48deg); }
+.l10 { width: 76px; left: 145px; top: 218px; transform: rotate(132deg); }
+.l11 { width: 108px; left: 145px; top: 255px; transform: rotate(90deg); }
+.l12 { width: 74px; left: 110px; top: 364px; transform: rotate(0deg); }
+
+.sephira {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.55);
+  box-shadow:
+    0 0 0 7px rgba(255,255,255,0.02),
+    0 0 18px currentColor,
+    0 0 34px currentColor;
+  animation: sephiraPulse 3.2s ease-in-out infinite;
+}
+
+.sephira::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.95), currentColor 58%, rgba(0,0,0,0.14) 100%);
+}
+
+.sephira:nth-of-type(odd) { animation-duration: 4s; }
+.sephira:nth-of-type(even) { animation-duration: 2.8s; }
+
+.s1  { top: 10px;  left: 130px; color: #fff7d1; }
+.s2  { top: 82px;  left: 59px;  color: #bcd7ff; }
+.s3  { top: 82px;  left: 201px; color: #ff4f7a; }
+.s4  { top: 154px; left: 59px;  color: #7ab6ff; }
+.s5  { top: 154px; left: 130px; color: #ffd54f; }
+.s6  { top: 154px; left: 201px; color: #ffb347; }
+.s7  { top: 227px; left: 59px;  color: #7dffb2; }
+.s8  { top: 227px; left: 201px; color: #ff6ec7; }
+.s9  { top: 300px; left: 130px; color: #9b6cff; }
+.s10 { top: 372px; left: 130px; color: #ffb3c7; }
+
+.section {
+  position: relative;
+  padding: 95px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-heading {
+  max-width: 820px;
+  margin-bottom: 46px;
+}
+
+.section-heading.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading h2 {
+  margin-top: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.02;
+}
+
+.section-heading p {
+  margin-top: 16px;
+  color: var(--text-soft);
+  line-height: 1.8;
+  font-size: 1.04rem;
+}
+
+.intro {
+  padding-top: 50px;
+}
+
+.dark-section {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.info-card,
+.final-cta-box,
+.video-box {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-md);
+}
+
+.info-card {
+  padding: 28px;
+  border-radius: 26px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.info-card:hover,
+.testimonial-card:hover,
+.video-box:hover,
+.audience-box:hover {
+  transform: translateY(-6px);
+  border-color: rgba(215, 160, 95, 0.28);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  color: #ffe6c8;
+  background: radial-gradient(circle, rgba(226, 31, 54, 0.18), rgba(215,160,95,0.12));
+  border: 1px solid rgba(226, 31, 54, 0.28);
+  margin-bottom: 18px;
+}
+
+.info-card h3 {
+  font-size: 1.18rem;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.video-box {
+  padding: 22px;
+  border-radius: 30px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(215,160,95,0.18);
+  background: rgba(0,0,0,0.3);
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Seção em destaque */
+.audience-section {
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(226,31,54,0.04));
+}
+
+.audience-spotlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.audience-box {
+  position: relative;
+  padding: 32px;
+  border-radius: 28px;
+  backdrop-filter: blur(14px);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.audience-positive {
+  border: 1px solid rgba(226, 31, 54, 0.35);
+  background: linear-gradient(180deg, rgba(226, 31, 54, 0.12), rgba(255,255,255,0.03));
+  box-shadow: 0 0 40px rgba(226,31,54,0.12);
+}
+
+.audience-positive::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #d7a05f, #ff4d57, #d7a05f);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+.audience-negative {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+}
+
+.audience-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff1de;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.audience-box h3 {
+  margin-bottom: 18px;
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
+.audience-list {
+  display: grid;
+  gap: 14px;
+}
+
+.audience-list li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.audience-positive .audience-list li::before,
+.audience-negative .audience-list li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+
+.audience-positive .audience-list li::before {
+  content: "•";
+  color: var(--gold-strong);
+}
+
+.audience-negative .audience-list li::before {
+  content: "•";
+  color: #ff8e9a;
+}
+
+.mentor-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.mentor-photo-card {
+  border-radius: 30px;
+  padding: 18px;
+  border: 1px solid rgba(226, 31, 54, 0.16);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+  box-shadow: var(--shadow-lg);
+}
+
+.mentor-photo {
+  width: 100%;
+  min-height: 560px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 24px;
+  border: 1px solid rgba(226, 31, 54, 0.2);
+}
+
+.mentor-copy h2 {
+  margin-top: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+  line-height: 1.04;
+}
+
+.mentor-copy p {
+  margin-top: 18px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+
+.mentor-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.mentor-points span {
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,215,170,0.16);
+  background: rgba(255,255,255,0.03);
+  color: #ffe0be;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 18px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(226, 31, 54, 0.35), rgba(255,220,160,0.10));
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: 16px 0;
+}
+
+.timeline-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #ffe0c4;
+  background: linear-gradient(180deg, rgba(226, 31, 54, 0.14), rgba(255,210,150,0.05));
+  border: 1px solid rgba(226, 31, 54, 0.24);
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 22px 24px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.035);
+  backdrop-filter: blur(12px);
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.testimonial-card {
+  position: relative;
+  padding: 26px;
+  border-radius: 26px;
+  border: 1px solid rgba(215, 160, 95, 0.18);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(215,160,95,0.08), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(226,31,54,0.08), transparent 30%);
+  pointer-events: none;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #fff4e8;
+  background: linear-gradient(135deg, #d3112b 0%, #b97a34 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.testimonial-header h3 {
+  font-size: 1rem;
+  color: #ffe4c1;
+  margin-bottom: 2px;
+}
+
+.testimonial-header span {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 1;
+  transition: max-height 0.35s ease;
+  overflow: hidden;
+}
+
+.testimonial-content.collapsed {
+  max-height: 168px;
+}
+
+.testimonial-content.expanded {
+  max-height: 1200px;
+}
+
+.testimonial-content p {
+  color: var(--text-soft);
+  line-height: 1.78;
+  font-size: 0.97rem;
+  white-space: pre-line;
+}
+
+.testimonial-content.collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  background: linear-gradient(180deg, rgba(4,1,2,0) 0%, rgba(4,1,2,0.96) 100%);
+  pointer-events: none;
+}
+
+.testimonial-toggle {
+  position: relative;
+  z-index: 1;
+  margin-top: 18px;
+  border: 1px solid rgba(215,160,95,0.24);
+  background: rgba(255,255,255,0.03);
+  color: #ffe0b7;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--transition), border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.testimonial-toggle:hover {
+  transform: translateY(-2px);
+  border-color: rgba(215,160,95,0.46);
+  color: #fff3de;
+  background: rgba(255,255,255,0.05);
+}
+
+.offer-section {
+  padding-top: 42px;
+  transition: filter 0.45s ease, transform 0.45s ease;
+}
+
+.offer-portal {
+  position: relative;
+  padding: 48px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, #090102, #140305);
+  border: 1px solid rgba(226, 31, 54, 0.34);
+  box-shadow:
+    0 0 140px rgba(226, 31, 54, 0.18),
+    0 0 70px rgba(215, 160, 95, 0.07),
+    0 30px 80px rgba(0,0,0,0.72);
+  overflow: hidden;
+  transition: box-shadow 0.45s ease, transform 0.45s ease;
+}
+
+.offer-section.offer-highlighted .offer-portal {
+  box-shadow:
+    0 0 0 1px rgba(255, 70, 90, 0.22),
+    0 0 40px rgba(220, 30, 60, 0.15),
+    0 0 90px rgba(220, 30, 60, 0.12),
+    0 0 55px rgba(215, 160, 95, 0.08),
+    0 30px 80px rgba(0,0,0,0.72);
+  transform: translateY(-2px);
+}
+
+.energy-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(226,31,54,0.34), transparent 60%),
+    radial-gradient(circle at 72% 18%, rgba(215,160,95,0.14), transparent 28%);
+  filter: blur(60px);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.offer-sigil {
+  position: absolute;
+  top: 50%;
+  right: -120px;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 1px solid rgba(226,31,54,0.12);
+  box-shadow:
+    0 0 0 40px rgba(226,31,54,0.03),
+    0 0 0 90px rgba(215,160,95,0.02);
+  pointer-events: none;
+}
+
+.offer-header {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.offer-header h2 {
+  margin-top: 14px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 1.02;
+}
+
+.offer-header p {
+  margin-top: 16px;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+
+.offer-content-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.offer-includes {
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.035);
+  backdrop-filter: blur(14px);
+}
+
+.offer-includes h3 {
+  font-size: 1.28rem;
+  margin-bottom: 12px;
+  color: #ffe7c8;
+}
+
+.feature-list {
+  margin-top: 22px;
+  display: grid;
+  gap: 14px;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #cda9ad;
+}
+
+.feature-list.gold li::before {
+  color: var(--gold-strong);
+}
+
+.feature-note {
+  color: #cdbfb1 !important;
+  font-style: italic;
+}
+
+.price-oracle {
+  padding: 34px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255, 77, 87, 0.30);
+  box-shadow: 0 0 45px rgba(226, 31, 54, 0.14);
+  text-align: center;
+}
+
+.price-label {
+  letter-spacing: 0.2em;
+  font-size: 0.74rem;
+  color: #ffd3a0;
+  font-weight: 700;
+}
+
+.price-old {
+  margin-top: 14px;
+  color: #d6b0b4;
+  font-size: 1.05rem;
+  text-decoration: line-through;
+  opacity: 0.9;
+}
+
+.price-main {
+  margin-top: 10px;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.price-main span {
+  color: #ffcf8a;
+}
+
+.price-main small {
+  font-size: 1.2rem;
+  vertical-align: super;
+  color: #ffd6db;
+  margin-left: 3px;
+}
+
+.price-alt {
+  margin-top: 12px;
+  color: var(--text-soft);
+  font-size: 1.08rem;
+}
+
+.price-alt strong {
+  color: #fff0dc;
+}
+
+.btn-mystic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 60px;
+  margin-top: 26px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #fff6f5;
+  background: linear-gradient(135deg, #ff3c4d 0%, #d3112b 48%, #b97a34 100%);
+  box-shadow: 0 0 34px rgba(211, 17, 43, 0.44);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.btn-mystic:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 60px rgba(211, 17, 43, 0.60);
+}
+
+.price-secure {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ffd9dd;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.value-compare {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.value-compare h3 {
+  color: #ffc98b;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.value-compare ul {
+  display: grid;
+  gap: 8px;
+}
+
+.value-compare li {
+  color: #d6c4c4;
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-question span {
+  color: #ffc27e;
+  font-size: 1.4rem;
+  transition: transform var(--transition);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+  padding: 0 24px 22px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
+}
+
+.final-cta-box {
+  padding: 48px 34px;
+  border-radius: 34px;
+  text-align: center;
+}
+
+.final-cta-box h2 {
+  margin-top: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.04;
+}
+
+.final-cta-box p {
+  max-width: 680px;
+  margin: 16px auto 0;
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+.final-cta-box .btn {
+  margin-top: 24px;
+}
+
+.footer {
+  padding: 34px 0 40px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.015);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer-content p,
+.footer-links a {
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+.btn-animated,
+.btn-mystic.btn-animated {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, #ff4257, #d5122b, #8f091d, #c48640);
+  background-size: 300% 300%;
+  border: none;
+  color: #fff;
+  box-shadow:
+    0 10px 30px rgba(211, 17, 43, 0.28),
+    inset 0 1px 0 rgba(255,255,255,0.16);
+  animation: gradientFlow 6s ease infinite;
+}
+
+.btn-animated:hover,
+.btn-mystic.btn-animated:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 16px 40px rgba(211, 17, 43, 0.38),
+    0 0 25px rgba(255, 200, 120, 0.18);
+  filter: brightness(1.05);
+}
+
+.btn-animated::before,
+.btn-mystic.btn-animated::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 20%,
+    rgba(255,255,255,0.08) 40%,
+    rgba(255,236,200,0
