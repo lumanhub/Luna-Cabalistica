@@ -29,13 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
 
+    if (!button || !answer) return;
+
     button.addEventListener("click", () => {
       const isActive = item.classList.contains("active");
 
       faqItems.forEach((faq) => {
         faq.classList.remove("active");
         const faqAnswer = faq.querySelector(".faq-answer");
-        faqAnswer.style.maxHeight = null;
+        if (faqAnswer) {
+          faqAnswer.style.maxHeight = null;
+        }
       });
 
       if (!isActive) {
@@ -46,21 +50,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   offerLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
 
-      if (offerSection) {
-        offerSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+      if (!offerSection) return;
 
-        offerSection.classList.add("offer-highlighted");
+      offerSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
 
-        setTimeout(() => {
-          offerSection.classList.remove("offer-highlighted");
-        }, 1600);
-      }
+      offerSection.classList.add("offer-highlighted");
+
+      setTimeout(() => {
+        offerSection.classList.remove("offer-highlighted");
+      }, 1600);
     });
   });
 
@@ -73,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (targetId === "#oferta") return;
 
       e.preventDefault();
+
       target.scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -83,7 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
   testimonialToggles.forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest(".testimonial-card");
+      if (!card) return;
+
       const content = card.querySelector(".testimonial-content");
+      if (!content) return;
+
       const isExpanded = content.classList.contains("expanded");
 
       if (isExpanded) {
