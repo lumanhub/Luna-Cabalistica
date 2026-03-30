@@ -2,18 +2,30 @@
   --bg: #040102;
   --bg-soft: #090203;
   --bg-soft-2: #130304;
+  --card: rgba(255, 255, 255, 0.04);
+  --card-strong: rgba(255, 255, 255, 0.07);
+
   --text: #f8efea;
   --text-soft: #dccaca;
   --text-muted: #ab9191;
+
   --red-1: #ff4d57;
   --red-2: #e21f36;
   --red-3: #a40c1e;
+  --red-4: #5f0711;
+
   --gold: #d7a05f;
   --gold-soft: #f2d6a4;
   --gold-strong: #f5c37a;
+
   --border: rgba(255, 255, 255, 0.09);
   --shadow-lg: 0 30px 90px rgba(0, 0, 0, 0.55);
   --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+  --radius-xl: 34px;
+  --radius-lg: 26px;
+  --radius-md: 18px;
+
   --container: 1200px;
   --transition: 0.4s ease;
 }
@@ -190,7 +202,7 @@ ul {
   padding: 0 26px;
   border-radius: 999px;
   font-weight: 700;
-  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border var(--transition), filter var(--transition);
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -291,7 +303,7 @@ ul {
   color: var(--text-soft);
   font-size: 1.08rem;
   line-height: 1.85;
-  max-width: 670px;
+  max-width: 690px;
 }
 
 .hero-actions {
@@ -511,21 +523,6 @@ ul {
   padding-top: 50px;
 }
 
-.tension-box {
-  margin-top: 28px;
-  padding: 24px 26px;
-  border-radius: 24px;
-  border: 1px solid rgba(215,160,95,0.18);
-  background: linear-gradient(180deg, rgba(226,31,54,0.10), rgba(255,255,255,0.025));
-  box-shadow: var(--shadow-md);
-}
-
-.tension-box p {
-  color: var(--text-soft);
-  line-height: 1.8;
-  font-size: 1.02rem;
-}
-
 .dark-section {
   background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));
 }
@@ -534,6 +531,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+}
+
+.cards-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .info-card,
@@ -582,17 +583,6 @@ ul {
 .info-card p {
   color: var(--text-soft);
   line-height: 1.75;
-}
-
-.mini-highlight {
-  margin: 0 auto 28px;
-  max-width: 520px;
-  text-align: center;
-  padding: 14px 18px;
-  border-radius: 999px;
-  border: 1px solid rgba(215,160,95,0.22);
-  background: rgba(255,255,255,0.03);
-  color: #ffe4be;
 }
 
 .video-box {
@@ -755,6 +745,62 @@ ul {
   color: #ffe0be;
 }
 
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 18px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(226, 31, 54, 0.35), rgba(255,220,160,0.10));
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: 16px 0;
+}
+
+.timeline-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #ffe0c4;
+  background: linear-gradient(180deg, rgba(226, 31, 54, 0.14), rgba(255,210,150,0.05));
+  border: 1px solid rgba(226, 31, 54, 0.24);
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 22px 24px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.035);
+  backdrop-filter: blur(12px);
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -870,57 +916,8 @@ ul {
   background: rgba(255,255,255,0.05);
 }
 
-.faq-list {
-  display: grid;
-  gap: 16px;
-}
-
-.faq-item {
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  background: rgba(255,255,255,0.035);
-  overflow: hidden;
-}
-
-.faq-question {
-  width: 100%;
-  background: transparent;
-  color: var(--text);
-  border: none;
-  padding: 22px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.faq-question span {
-  color: #ffc27e;
-  font-size: 1.4rem;
-  transition: transform var(--transition);
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-
-.faq-answer p {
-  padding: 0 24px 22px;
-  color: var(--text-soft);
-  line-height: 1.75;
-}
-
-.faq-item.active .faq-question span {
-  transform: rotate(45deg);
-}
-
 .offer-section {
   padding-top: 42px;
-  transition: filter 0.45s ease, transform 0.45s ease;
 }
 
 .offer-portal {
@@ -1148,6 +1145,54 @@ ul {
 
 .value-compare li {
   color: #d6c4c4;
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.035);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-question span {
+  color: #ffc27e;
+  font-size: 1.4rem;
+  transition: transform var(--transition);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+  padding: 0 24px 22px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
 }
 
 .final-cta-box {
@@ -1390,8 +1435,7 @@ ul {
   .testimonial-card,
   .info-card,
   .video-box,
-  .audience-spot,
-  .tension-box {
+  .audience-spot {
     padding: 24px;
   }
 
@@ -1447,15 +1491,4 @@ ul {
     inset: 10px 42px 18px;
   }
 
-  .l1  { width: 64px; left: 126px; top: 36px;  transform: rotate(144deg); }
-  .l2  { width: 64px; left: 126px; top: 36px;  transform: rotate(36deg); }
-  .l3  { width: 64px; left: 62px;  top: 100px; transform: rotate(0deg); }
-  .l4  { width: 64px; left: 94px;  top: 68px;  transform: rotate(90deg); }
-  .l5  { width: 66px; left: 94px;  top: 132px; transform: rotate(132deg); }
-  .l6  { width: 66px; left: 126px; top: 132px; transform: rotate(48deg); }
-  .l7  { width: 64px; left: 126px; top: 164px; transform: rotate(90deg); }
-  .l8  { width: 64px; left: 62px;  top: 228px; transform: rotate(0deg); }
-  .l9  { width: 66px; left: 94px;  top: 196px; transform: rotate(48deg); }
-  .l10 { width: 66px; left: 126px; top: 196px; transform: rotate(132deg); }
-  .l11 { width: 96px; left: 126px; top: 228px; transform: rotate(90deg); }
-  .l12 { width: 
+  .l1  { width: 
