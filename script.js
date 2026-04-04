@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
+  // REVEAL ANIMATION
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // FAQ ACCORDION
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
@@ -47,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // SCROLL TO OFFER
   offerLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -66,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // SCROLL SUAVE GERAL
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
@@ -83,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // TESTIMONIAL TOGGLE
   testimonialToggles.forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest(".testimonial-card");
