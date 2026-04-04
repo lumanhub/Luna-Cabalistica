@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
-  // REVEAL ANIMATION
+  // ANIMAÇÃO DE ENTRADA
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -15,18 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    {
-      threshold: 0.12,
-    }
+    { threshold: 0.12 }
   );
 
-  revealElements.forEach((element) => {
-    if (!element.classList.contains("visible")) {
-      revealObserver.observe(element);
+  revealElements.forEach((el) => {
+    if (!el.classList.contains("visible")) {
+      revealObserver.observe(el);
     }
   });
 
-  // FAQ ACCORDION
+  // FAQ
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
@@ -49,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // SCROLL TO OFFER
+  // SCROLL PARA OFERTA
   offerLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -75,8 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetId = this.getAttribute("href");
       const target = document.querySelector(targetId);
 
-      if (!target) return;
-      if (targetId === "#oferta") return;
+      if (!target || targetId === "#oferta") return;
 
       e.preventDefault();
 
@@ -87,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // TESTIMONIAL TOGGLE
+  // EXPANDIR DEPOIMENTOS
   testimonialToggles.forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest(".testimonial-card");
