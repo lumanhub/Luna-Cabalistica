@@ -440,6 +440,11 @@ ul {
 .sephira-node {
   color: #ffffff;
   animation: sephiraPulse 3.2s ease-in-out infinite;
+}
+
+.sephira-node .orb-core,
+.sephira-node .orb-shine {
+  transform-box: fill-box;
   transform-origin: center;
 }
 
