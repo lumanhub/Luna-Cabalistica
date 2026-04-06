@@ -404,34 +404,21 @@ ul {
 
 .tree-life {
   position: relative;
-  width: min(100%, 328px);
+  width: min(100%, 320px);
   height: 520px;
   margin: 0 auto;
-  animation: treeFloat 6.4s ease-in-out infinite;
+  animation: treeFloat 6s ease-in-out infinite;
   transform-origin: center;
-}
-
-.tree-life::before {
-  content: "";
-  position: absolute;
-  inset: 42px 72px 48px;
-  border-radius: 999px;
-  background:
-    radial-gradient(circle at center, rgba(255, 220, 170, 0.16), transparent 52%),
-    radial-gradient(circle at center, rgba(226, 31, 54, 0.10), transparent 72%);
-  filter: blur(26px);
-  pointer-events: none;
 }
 
 .tree-aura {
   position: absolute;
-  inset: 24px 54px 18px;
+  inset: 26px 56px 20px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.04);
   box-shadow:
-    0 0 0 18px rgba(226, 31, 54, 0.035),
-    0 0 0 36px rgba(215, 160, 95, 0.022),
-    0 0 70px rgba(215, 160, 95, 0.10);
+    0 0 0 18px rgba(226, 31, 54, 0.03),
+    0 0 55px rgba(215, 160, 95, 0.08);
   pointer-events: none;
 }
 
@@ -443,13 +430,11 @@ ul {
 }
 
 .tree-lines line {
-  stroke: rgba(244, 205, 132, 0.98);
-  stroke-width: 3.2;
+  stroke: rgba(244, 205, 132, 0.96);
+  stroke-width: 3;
   stroke-linecap: round;
-  opacity: 0.98;
-  filter:
-    drop-shadow(0 0 6px rgba(255, 211, 138, 0.34))
-    drop-shadow(0 0 16px rgba(226, 31, 54, 0.10));
+  opacity: 0.95;
+  filter: drop-shadow(0 0 6px rgba(255, 211, 138, 0.32));
 }
 
 .sephira-node {
@@ -460,12 +445,11 @@ ul {
 
 .sephira-node .orb-core {
   fill: currentColor;
-  stroke: rgba(255, 245, 220, 0.82);
-  stroke-width: 2.4;
+  stroke: rgba(255, 245, 220, 0.72);
+  stroke-width: 2.2;
   filter:
     drop-shadow(0 0 8px currentColor)
-    drop-shadow(0 0 20px currentColor)
-    drop-shadow(0 0 32px rgba(255, 215, 140, 0.18));
+    drop-shadow(0 0 20px currentColor);
 }
 
 .sephira-node .orb-shine {
