@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.12 }
+    {
+      threshold: 0.12,
+    }
   );
 
   revealElements.forEach((element) => {
