@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
-  // ANIMAÇÃO DE ENTRADA
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // FAQ (abre e fecha)
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
@@ -49,12 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // SCROLL SUAVE PARA OFERTA (só se ainda existir #oferta)
   offerLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-      if (!offerSection) return;
-
       e.preventDefault();
+
+      if (!offerSection) return;
 
       offerSection.scrollIntoView({
         behavior: "smooth",
@@ -69,13 +66,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // SCROLL SUAVE GERAL
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
       const target = document.querySelector(targetId);
 
-      if (!target || targetId === "#oferta") return;
+      if (!target) return;
+      if (targetId === "#oferta") return;
 
       e.preventDefault();
 
@@ -86,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // EXPANDIR DEPOIMENTOS
   testimonialToggles.forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest(".testimonial-card");
