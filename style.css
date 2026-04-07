@@ -443,22 +443,30 @@ ul {
 
 .sephira-node {
   color: #ffffff;
-  animation: sephiraPulse 3.2s ease-in-out infinite;
+}
+
+.sephira-node .orb-core,
+.sephira-node .orb-shine {
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .sephira-node .orb-core {
   fill: currentColor;
   stroke: rgba(255, 245, 220, 0.72);
   stroke-width: 2.2;
+  vector-effect: non-scaling-stroke;
   filter:
     drop-shadow(0 0 8px currentColor)
     drop-shadow(0 0 20px currentColor);
+  animation: sephiraPulse 3.2s ease-in-out infinite;
 }
 
 .sephira-node .orb-shine {
   fill: rgba(255, 255, 255, 0.38);
   filter: blur(1.2px);
   opacity: 0.95;
+  animation: sephiraShine 3.2s ease-in-out infinite;
 }
 
 .s1  { color: #f4f1ea; }
@@ -1181,10 +1189,21 @@ ul {
 @keyframes sephiraPulse {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.92;
+    opacity: 0.94;
   }
   50% {
-    transform: scale(1.14);
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes sephiraShine {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.06);
     opacity: 1;
   }
 }
