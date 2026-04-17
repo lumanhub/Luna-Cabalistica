@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
-  // 👇 BOTÃO WHATSAPP (pra rastrear clique)
+  // 👉 BOTÃO WHATSAPP
   const whatsappButton = document.querySelector(".whatsapp-float");
 
+  // ANIMAÇÃO DE REVEAL
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // FAQ
   faqItems.forEach((item) => {
     const button = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
@@ -50,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // SCROLL PARA OFERTA
   offerLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -69,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // SCROLL SUAVE
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
@@ -86,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // DEPOIMENTOS
   testimonialToggles.forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest(".testimonial-card");
@@ -108,11 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🚀 RASTREAMENTO DO CLIQUE NO WHATSAPP
+  // 🚀 RASTREAMENTO WHATSAPP (PIXEL)
   if (whatsappButton) {
     whatsappButton.addEventListener("click", () => {
       if (typeof fbq !== "undefined") {
-        fbq('trackCustom', 'WhatsAppClick');
+        fbq("trackCustom", "WhatsAppClick");
       }
     });
   }
