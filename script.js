@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
-  // 👉 BOTÃO WHATSAPP
+  // 🔥 BOTÃO WHATSAPP (rastreamento)
   const whatsappButton = document.querySelector(".whatsapp-float");
 
-  // ANIMAÇÃO DE REVEAL
+  // REVEAL (animação de entrada)
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🚀 RASTREAMENTO WHATSAPP (PIXEL)
+  // 🚀 PIXEL - clique no WhatsApp
   if (whatsappButton) {
     whatsappButton.addEventListener("click", () => {
       if (typeof fbq !== "undefined") {
