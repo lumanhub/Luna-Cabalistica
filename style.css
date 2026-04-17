@@ -1198,11 +1198,6 @@ ul {
     opacity: 1;
   }
 }
-  50% {
-    transform: scale(1.14);
-    opacity: 1;
-  }
-}
 
 @keyframes cardLevitate {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
