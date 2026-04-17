@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
+  // 👇 BOTÃO WHATSAPP (pra rastrear clique)
+  const whatsappButton = document.querySelector(".whatsapp-float");
+
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -104,4 +107,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 🚀 RASTREAMENTO DO CLIQUE NO WHATSAPP
+  if (whatsappButton) {
+    whatsappButton.addEventListener("click", () => {
+      if (typeof fbq !== "undefined") {
+        fbq('trackCustom', 'WhatsAppClick');
+      }
+    });
+  }
 });
