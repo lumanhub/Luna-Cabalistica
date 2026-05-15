@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const offerSection = document.querySelector("#oferta");
   const testimonialToggles = document.querySelectorAll(".testimonial-toggle");
 
-  // ÍCONES REDES SOCIAIS
-  const socialIcons = document.querySelectorAll(".social-icon");
-
   // BOTÃO WHATSAPP (rastreamento)
   const whatsappButton = document.querySelector(".whatsapp-float");
 
@@ -30,18 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!element.classList.contains("visible")) {
       revealObserver.observe(element);
     }
-  });
-
-  // ANIMAÇÃO DOS ÍCONES SOCIAIS
-  socialIcons.forEach((icon, index) => {
-    icon.style.opacity = "0";
-    icon.style.transform = "translateY(20px)";
-
-    setTimeout(() => {
-      icon.style.transition = "0.6s ease";
-      icon.style.opacity = "1";
-      icon.style.transform = "translateY(0)";
-    }, 250 + index * 150);
   });
 
   // FAQ ACCORDION
@@ -91,6 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
+
+      if (!targetId || targetId === "#") return;
+
       const target = document.querySelector(targetId);
 
       if (!target) return;
